@@ -30,3 +30,14 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# macOS
+.DS_Store
+
+# Hugo
+.hugo_build.lock
+public/
+resources/
+
+# Optional local files
+*.log

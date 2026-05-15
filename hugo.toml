@@ -1,0 +1,117 @@
+baseURL = 'https://forefrontastronomy-website.pages.dev/'
+languageCode = 'ja'
+title = 'ForeFrontAstronomy - 宇宙・天文を最先端のデータで手軽に楽しむ'
+theme = 'PaperMod'
+
+# PaperMod 基本設定
+[params]
+  env = "production"
+  description = "現役天文学研究者による宇宙・天文解説サイト。ジェイムズウェッブ宇宙望遠鏡やXRISM衛星などの最先端データを使った独自解説をお届けします。"
+  keywords = ["宇宙", "天文学", "ジェイムズウェッブ", "XRISM", "ガンマ線バースト", "ForeFrontAstronomy",
+  "ビッグバン", "宇宙論", "初期宇宙", "赤方偏移", "暗黒物質", "超新星", "ダークマター",
+  "ブラックホール", "中性子星", "銀河", "系外惑星", "宇宙望遠鏡",
+  "すばる望遠鏡", "ハッブル宇宙望遠鏡", "アルマ望遠鏡", "重力波",
+  "宇宙背景放射", "ダークエネルギー", "星形成", "銀河進化", "マルチメッセンジャー天文学"]
+  author = "ForeFrontAstronomy"
+  DateFormat = "2006年1月2日"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1st = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  # SEO設定
+  [params.homeInfoParams]
+    Title = "ForeFrontAstronomy"
+    Content = "🔭 **宇宙・天文を最先端のデータで手軽に楽しむ**\n\n現役天文学研究者が、ジェイムズウェッブ宇宙望遠鏡やXRISM衛星などの最先端観測データを使って、宇宙の神秘を分かりやすく解説します。"
+
+  # Social Media Links
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@ForeFrontAstronomy"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/AstronomyForef1"
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/forefrontastronomy"
+
+  [[params.socialIcons]]
+    name = "link"
+    url = "https://note.com/astrospace"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+# メニュー設定（重複削除）
+[[menu.main]]
+  identifier = "categories"
+  name = "動画カテゴリ"
+  url = "/categories/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "posts"
+  name = "記事"
+  url = "/posts/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "archives"
+  name = "アーカイブ"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40
+
+# マークアップ設定
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "github"
+
+# 出力設定
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# SEO関連
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+# Analytics (後で設定)
+# [params.analytics]
+#   google = "G-XXXXXXXXXX"
+
+# カテゴリー設定
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"

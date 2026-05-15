@@ -17,7 +17,7 @@ theme = 'PaperMod'
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
@@ -54,15 +54,21 @@ theme = 'PaperMod'
     name = "link"
     url = "https://note.com/astrospace"
 
-  [[params.socialIcons]]
-    name = "rss"
-    url = "index.xml"
+#  [[params.socialIcons]]
+#    name = "rss"
+#    url = "index.xml"
 
 # メニュー設定（重複削除）
 [[menu.main]]
-  identifier = "categories"
-  name = "動画カテゴリ"
-  url = "/categories/"
+#  identifier = "categories"
+#  name = "動画カテゴリ"
+#  url = "/categories/"
+#  weight = 10
+
+[[menu.main]]
+  identifier = "videos"
+  name = "動画一覧"
+  url = "/videos/"
   weight = 10
 
 [[menu.main]]
@@ -85,6 +91,10 @@ theme = 'PaperMod'
 
 # マークアップ設定
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
   [markup.highlight]
     noClasses = false
     codeFences = true

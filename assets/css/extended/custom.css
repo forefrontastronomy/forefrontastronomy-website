@@ -1,0 +1,53 @@
+:root {
+  --main-width: 1200px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.video-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: var(--entry);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.video-card h3 {
+  font-size: 1rem;
+  margin: 0.7rem 0 0.4rem;
+}
+
+.video-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.social-links-simple {
+  display: flex;
+  gap: 0.8rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.social-links-simple a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  background: var(--entry);
+  font-size: 0.95rem;
+}
+
+.social-links-simple a:hover {
+  opacity: 0.8;
+}
+

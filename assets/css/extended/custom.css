@@ -7,7 +7,7 @@
   max-width: var(--main-width);
 }
 
-/* Header */
+/* Header: title on top, menu below */
 .header {
   max-width: var(--main-width);
   margin: 0 auto;
@@ -15,7 +15,16 @@
 }
 
 .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
   max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
   margin: 0;
   padding: 0;
 }
@@ -23,10 +32,16 @@
 .logo a {
   font-size: 1.45rem;
   font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
 }
 
 #menu {
-  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
 }
 
 #menu a {

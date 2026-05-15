@@ -33,9 +33,9 @@ theme = 'PaperMod'
   tocopen = false
 
   # SEO設定
-  [params.homeInfoParams]
-    Title = "ForeFrontAstronomy"
-    Content = "🔭 **宇宙・天文を最先端のデータで手軽に楽しむ**\n\n現役天文学研究者が、ジェイムズウェッブ宇宙望遠鏡やXRISM衛星などの最先端観測データを使って、宇宙の神秘を分かりやすく解説します。"
+#  [params.homeInfoParams]
+#    Title = "ForeFrontAstronomy"
+#    Content = "🔭 **宇宙・天文を最先端のデータで手軽に楽しむ**\n\n現役天文学研究者が、ジェイムズウェッブ宇宙望遠鏡やXRISM衛星などの最先端観測データを使って、宇宙の神秘を分かりやすく解説します。"
 
   # Social Media Links
   [[params.socialIcons]]
@@ -72,9 +72,9 @@ theme = 'PaperMod'
   weight = 10
 
 [[menu.main]]
-  identifier = "posts"
+  identifier = "articles"
   name = "記事"
-  url = "/posts/"
+  url = "/articles/"
   weight = 20
 
 [[menu.main]]
@@ -83,11 +83,11 @@ theme = 'PaperMod'
   url = "/archives/"
   weight = 30
 
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = 40
+#[[menu.main]]
+#  identifier = "about"
+#  name = "About"
+#  url = "/about/"
+#  weight = 40
 
 # マークアップ設定
 [markup]

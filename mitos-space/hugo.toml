@@ -1,0 +1,39 @@
+baseURL = "https://mitos-space.com/"
+title = "MITOS Space"
+theme = "PaperMod"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[params]
+  description = "MITOS Space is the space and astronomy research division of MITOS CO., LTD."
+
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    contentDir = "content/en"
+    weight = 1
+    title = "MITOS Space"
+
+    [languages.en.params]
+      description = "MITOS Space is the space and astronomy research division of MITOS CO., LTD."
+
+      [languages.en.params.homeInfoParams]
+        Title = "MITOS Space"
+        Content = "MITOS Space is the space and astronomy research division of MITOS CO., LTD., integrating scientific research, education, and science communication. We conduct and support astronomical research, develop educational content, and communicate scientific discoveries to broader audiences, with a particular focus on space science, astronomy, and related fields of scientific research."
+
+  [languages.zh-tw]
+    languageName = "繁體中文"
+    languageCode = "zh-TW"
+    contentDir = "content/zh-TW"
+    weight = 2
+    title = "MITOS Space"
+
+    [languages.zh-tw.params]
+      description = "MITOS Space 是 MITOS CO., LTD. 旗下的太空與天文研究部門。"
+
+      [languages.zh-tw.params.homeInfoParams]
+        Title = "MITOS Space"
+        Content = "MITOS Space 是 MITOS CO., LTD. 旗下的太空與天文研究部門，結合科學研究、教育與科學傳播。我們從事並支援天文學研究，製作教育內容，並向更廣泛的受眾傳播科學發現，特別聚焦於太空科學、天文學及相關科學研究領域。"

@@ -1,0 +1,250 @@
+:root {
+  --main-width: 1200px;
+}
+
+/* Layout width */
+.main {
+  max-width: var(--main-width);
+}
+
+/* Header: title on top, menu below */
+.header {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.logo a {
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+#menu a {
+  font-size: 1rem;
+}
+
+/* Page title */
+.post-title {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+/* Video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.video-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: var(--entry);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.video-card h3 {
+  font-size: 1rem;
+  margin: 0.7rem 0 0.4rem;
+}
+
+/* Category cards */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.category-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  background: var(--entry);
+  text-decoration: none;
+}
+
+.category-card h2 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Social links */
+.social-links-simple {
+  display: flex;
+  gap: 0.8rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.social-links-simple a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  background: var(--entry);
+  font-size: 0.95rem;
+}
+
+.note-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 2rem 0;
+}
+
+.note-link-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  background: var(--entry);
+  text-decoration: none;
+}
+
+.note-link-card h2 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+}
+
+.note-link-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.note-link-card:hover {
+  transform: translateY(-2px);
+  transition: 0.15s ease;
+}
+
+.archive-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 2rem 0;
+}
+
+.archive-image-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.8rem;
+  background: var(--entry);
+  text-decoration: none;
+}
+
+.archive-image-card img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  background: #000;
+}
+
+.archive-image-card h2 {
+  font-size: 1rem;
+  line-height: 1.35;
+  margin: 0.8rem 0 0.2rem;
+}
+
+.youtube-lite {
+  margin: 1.6rem 0 2.2rem;
+}
+
+.youtube-lite-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  border: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+}
+
+.youtube-lite-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.youtube-lite-button:hover img {
+  transform: scale(1.03);
+  opacity: 0.82;
+}
+
+.youtube-lite-play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 50px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.72);
+  color: white;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.youtube-lite iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 14px;
+  display: block;
+}
+
+.youtube-lite h3 {
+  margin-top: 0.65rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}

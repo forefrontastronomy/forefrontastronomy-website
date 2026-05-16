@@ -41,3 +41,5 @@ resources/
 
 # Optional local files
 *.log
+mitos-space/public/
+mitos-space/resources/

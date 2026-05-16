@@ -1,4 +1,4 @@
-baseURL = 'https://forefrontastronomy-website.pages.dev/'
+baseURL = 'https://forefrontastronomy.comv/'
 languageCode = 'ja'
 title = 'ForeFrontAstronomy - 宇宙・天文を最先端のデータで手軽に楽しむ'
 theme = 'PaperMod'

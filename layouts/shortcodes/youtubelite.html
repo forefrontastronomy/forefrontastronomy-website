@@ -1,0 +1,14 @@
+{{ $id := .Get "id" }}
+{{ $title := .Get "title" | default "YouTube video" }}
+
+<div class="youtube-lite" data-video-id="{{ $id }}">
+  <button class="youtube-lite-button" type="button" aria-label="{{ $title }} を再生">
+    <img
+      src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg"
+      alt="{{ $title }}"
+      loading="lazy"
+    >
+    <span class="youtube-lite-play">▶</span>
+  </button>
+  <h3>{{ $title }}</h3>
+</div>
